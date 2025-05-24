@@ -13,9 +13,9 @@ function decrement() {
   count--;
 }
 
+// 使用 @computed 注解创建计算属性
 // @computed
 const doubleCount = count * 2;
-
 // @computed
 const countStatus = count === 0 ? "零" : count > 0 ? "正数" : "负数";
 
@@ -83,6 +83,7 @@ const fadeIn = styled.keyframes({
     transform: "translateY(0)",
   },
 });
+
 // 使用 styled 系统创建样式化组件
 const Container = styled.div`
   text-align: center;
